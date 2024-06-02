@@ -2,7 +2,7 @@
 
 * Студент: [Макс](https://up.htmlacademy.ru/htmlcss/40/user/2489173).
 * Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
-* Сайт: [Проект Седона] (https://ryzen-71.github.io/2489173-sedona-40/)
+* Сайт: [Проект Седона] (https://ryzen-71.github.io/2489173-sedona-40/index.html)
 
 ---
 
