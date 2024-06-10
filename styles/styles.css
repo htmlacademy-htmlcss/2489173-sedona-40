@@ -14,19 +14,43 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #000000;
   line-height: 21px;
-  font-weight: 400;
   background-color: #F2F2F2;
   width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
 }
 
 .wrap {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
+}
+
+.navigation{
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
+}
+
+
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  width: 340px;
+  list-style-type: none;
+}
+
+.navigation-user{
+  max-width: 290px;
 }
 
 .navigation-link{
@@ -39,6 +63,10 @@ text-align: center;
 text-transform: capitalize;
 }
 
+.main{
+  flex-grow: 1;
+}
+
 .hero {
   background-color: #000000;
   background: url(../images/main-background.jpg);
@@ -47,6 +75,8 @@ text-transform: capitalize;
   text-align: center;
 }
 
+
+
 .advantages{
   text-align: center;
 }
@@ -54,6 +84,7 @@ text-transform: capitalize;
 .advantages-list{
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item:nth-child(even){
@@ -96,6 +127,52 @@ background-color: #83B3D3;
   text-transform: uppercase;
 }
 
+.advantages-continuation{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.advantages-continuation-item{
+width: 400px;
+}
+
+
+
+.advantages-continuation-item-house::before{
+  content: url(../images/svg/home.svg);
+  position: absolute;
+  top:81px;
+  left: 162px;
+}
+
+.advantages-continuation-item-food::before{
+  content: url(../images/svg/food.svg);
+  position: absolute;
+  top:82px;
+  left: 560px;
+}
+
+.advantages-continuation-item-present::before{
+  content: url(../images/svg/present.svg);
+  position: absolute;
+  top:81px;
+  left: 970px;
+}
+
+.advantages-continuation-item .advantages-title{
+  margin:0;
+  margin-top: 183px;
+}
+
+.advantages-continuation-item .advantages-description{
+  margin:30px 85px 81px;
+
+}
+
 .advantages-item-picture .advantages-description{
   color: rgb(255, 255, 255);
 }
@@ -103,6 +180,8 @@ background-color: #83B3D3;
 .advantages-continuation-item:nth-child(odd){
 background: rgba(131, 179, 211, 0.12);
 }
+
+
 
 .search{
   text-align: center;
@@ -149,10 +228,32 @@ font-size: 18px;
 line-height: 23px;
 }
 
+.catalog{
+  padding: 0 70px;
+}
+
+.card-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.card-list-item{
+  width: 340px;
+  padding: 20px ;
+border: 1px solid #E6E6E6;
+box-sizing: border-box;
+}
+
 .card-link{
 color: #000000;
 text-decoration: none;
 }
+
 .card-title{
 font-size: 24px;
 line-height: 28px;
@@ -168,14 +269,37 @@ line-height: 28px;
   text-transform: uppercase;
 }
 
+.pagination{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-item{
+  list-style-type: none;
+  margin-right: 8px;
+}
+
+.pagination-item:last-child{
+  margin-right: 0;
+}
+
 .pagination-link{
-  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding:11px 24px 13px ;
+ color: rgb(255, 255, 255);
 font-size: 20px;
 font-weight: 700;
 line-height: 36px;
 text-decoration: none;
 text-transform: uppercase;
 background-color: #82B3D3;
+box-sizing: border-box;
+
 }
 
 .pagination-current{
@@ -186,6 +310,12 @@ font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
 text-decoration: none;
+}
+
+.pagination-link-points{
+  color: #000000;
+  background-color: transparent;
+  padding: 16px 22px 18px ;
 }
 /* Buttons */
 .button {
@@ -216,6 +346,19 @@ line-height: 36px;
 }
 
 /* Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+ padding: 0 70px;
+
+}
+
+
+.social-list{
+  margin: 0;
+  padding: 0;
+}
+
 .footer-phone{
 color: inherit;
 font-size: 40px;
