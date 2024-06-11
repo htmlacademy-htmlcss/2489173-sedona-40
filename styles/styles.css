@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -24,8 +24,7 @@ body {
   color: #000000;
   line-height: 21px;
   background-color: #F2F2F2;
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   min-height: 100%;
 }
 
@@ -33,6 +32,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation{
@@ -54,7 +55,7 @@ body {
 }
 
 .navigation-link{
-  color: inherit;
+color: inherit;
 font-size: 20px;
 font-weight: 700;
 line-height: 24px;
@@ -69,13 +70,11 @@ text-transform: capitalize;
 
 .hero {
   background-color: #000000;
-  background: url(../images/main-background.jpg);
-  background-size: 100% auto;
+  background: url("../images/main-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }
-
-
 
 .advantages{
   text-align: center;
@@ -140,24 +139,22 @@ background-color: #83B3D3;
 width: 400px;
 }
 
-
-
 .advantages-continuation-item-house::before{
-  content: url(../images/svg/home.svg);
+  content: url("../images/svg/home.svg");
   position: absolute;
   top:81px;
   left: 162px;
 }
 
 .advantages-continuation-item-food::before{
-  content: url(../images/svg/food.svg);
+  content: url("../images/svg/food.svg");
   position: absolute;
   top:82px;
   left: 560px;
 }
 
 .advantages-continuation-item-present::before{
-  content: url(../images/svg/present.svg);
+  content: url("../images/svg/present.svg");
   position: absolute;
   top:81px;
   left: 970px;
@@ -194,7 +191,7 @@ background: rgba(131, 179, 211, 0.12);
 
 .subscribe-main{
   color: #ffffff;
-  background-image: url(../images/background-subscribe.jpg);
+  background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #83B3D3;
@@ -206,7 +203,7 @@ background: rgba(131, 179, 211, 0.12);
 
 .wrapper-filter {
   color:#FFFFFF;
-  background-image: url(../images/background-filter.jpg);
+  background-image: url("../images/background-filter.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #83B3D3;
