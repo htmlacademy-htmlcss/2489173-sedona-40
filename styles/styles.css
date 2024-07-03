@@ -95,7 +95,7 @@ align-items: center;
 .navigation-list .navigation-link{
   position: relative;
 display: block;
-padding: 20px 16px;
+padding: 20px 15px;
 }
 
 .navigation-link-current::before{
@@ -131,6 +131,9 @@ margin-left: auto;
 margin-right: 20px;
 }
 
+.navigation-user .navigation-item:first-child{
+  margin-right: 5px;
+}
 
 
 .navigation-link{
@@ -232,7 +235,7 @@ background-color: #615048;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 51px 371px 82px ;
+  padding: 51px 371px 79px ;
   position: relative;
 }
 
@@ -258,8 +261,9 @@ background-color: #615048;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
-  padding-top: 69px;
+  padding-top: 67px;
   padding-bottom: 69px;
+  margin-bottom: 21px;
 }
 
 .advantages-list{
@@ -506,7 +510,7 @@ margin-bottom:  20px;
   width: 100%;
   min-width: 452px;
   font-size: 18px;
-  padding: 12px 20px 12px 20px;
+  padding: 14px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
 background: rgb(242, 242, 242);
@@ -516,7 +520,7 @@ background: rgb(242, 242, 242);
   margin-bottom:  20px;
 }
 .subscribe-wrapper .section-description {
-  margin-bottom:  54px;
+  margin-bottom:  57px;
 }
 
 .subscribe-main{
@@ -620,7 +624,7 @@ line-height: 21px;
 }
 
 .filter-catalog-group:nth-child(2){
-  margin-right:  70px;
+  margin-right: 79px;
 }
 
 
@@ -681,6 +685,7 @@ line-height: 21px;
   padding-right: 55px;
   background: rgb(242, 242, 242);
   font-size: 18px;
+  /* width: 143px; */
   border: none;
   appearance: textfield;
 }
@@ -774,6 +779,20 @@ background: rgb(230, 230, 230);
  opacity: 0.3;
 }
 
+.control-input[type="checkbox"]:focus~.control-mark
+{
+  outline: 3px solid rgb(131, 179, 211);
+  border-radius: 4px;
+}
+
+
+.control-input[type="radio"]:focus~.control-mark
+{
+  outline: 3px solid rgb(131, 179, 211);
+  border-radius: 17px;
+}
+
+
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -823,7 +842,7 @@ line-height: 23px;
 .filter-button .button[type="submit"]{
   max-width: 191px;
   margin-top: 56px;
-  margin-bottom:32px ;
+  margin-bottom:39px ;
   padding: 8px 50px;
 }
 
@@ -869,7 +888,7 @@ line-height: 23px;
 
 .search-result{
   display: flex;
-  padding: 50px 0 40px;
+  padding: 53px 0 38px;
 }
 
 .search-result .section-title{
@@ -1021,7 +1040,7 @@ line-height: 28px;
 
 .wrap-card-buttons .button-basic{
   min-width:140px;
-  padding: 8px 20px;
+  padding: 9px 26px;
 }
 
 .card-button{
@@ -1227,7 +1246,7 @@ line-height: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 47px 70px 30px;
 }
 
 
@@ -1252,7 +1271,7 @@ line-height: 28px;
 }
 
 .social-item:not(:last-child) {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 
