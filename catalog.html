@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <div class="wrap">
       <header class="page-header">
@@ -67,14 +65,11 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">
-                Гостиницы
-              </a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
           <section class="filter">
             <h2 class="visually-hidden">Список фильтров для сортировки гостиниц</h2>
-
             <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-catalog-group">
                 <legend class="filter-catalog-title">Инфраструктура:</legend>
@@ -102,7 +97,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="filter-catalog-group">
                 <legend class="filter-catalog-title">Тип жилья:</legend>
                 <ul class="filter-list">
@@ -129,8 +123,7 @@
                   </li>
                 </ul>
               </fieldset>
-
-              <fieldset class="filter-catalog-group">
+              <fieldset class="filter-catalog-group price-sorting">
                 <legend class="filter-catalog-title">Стоимость, ₽:</legend>
                 <div class="range-field">
                 <label class="initial-input-range">
@@ -142,7 +135,6 @@
                   <input class="range-input" type="number" name="horse-price" value="9000" min="0" max="10000" step="100" placeholder="10000" >
                 </label>
               </div>
-
               <div class="range-scale">
                 <div class="range-bar" style="left:0; width: 207px">
                   <button class="range-toggle toggle-min">
@@ -153,10 +145,7 @@
                   </button>
                 </div>
               </div>
-
-
               </fieldset>
-
               <div class="filter-button">
                 <button class="button" type="submit">Применить</button>
                 <button class="button button-reset" type="reset">Сбросить</button>
@@ -164,17 +153,14 @@
             </form>
           </section>
         </div>
-
-        <section class="catalog">
+         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="search-result">
-            <p class="section-title">Найдено гостиниц: 38</p>
             <h3 class="visually-hidden">Сортировка</h3>
-
+            <p class="section-title">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
             </select>
-
             <ul class="sorting">
               <li class="sorting-item ">
                 <a href="catalog.html?view=card" class="sorting-link sorting-link-current">
@@ -207,9 +193,7 @@
               </li>
             </ul>
           </div>
-
           <h3 class="visually-hidden">Список гостиниц</h3>
-
           <ul class="card-list">
             <li class="card-list-item">
               <a class="card-link" href="">
@@ -236,8 +220,6 @@
                 <span class="rating">Рейтинг: 8,5</span>
               </div>
             </li>
-
-
             <li class="card-list-item">
               <a class="card-link" href="">
                 <img class="card-img" src="images/hotel/hotel-2.jpg" width="300" height="212"
@@ -263,8 +245,6 @@
                 <span class="rating">Рейтинг: 9.2</span>
               </div>
             </li>
-
-
             <li class="card-list-item">
               <a class="card-link" href="">
                 <img class="card-img" src="images/hotel/hotel-3.jpg" width="300" height="212"
@@ -289,8 +269,6 @@
                 <span class="rating">Рейтинг: 6.9</span>
               </div>
             </li>
-
-
             <li class="card-list-item">
               <a class="card-link" href="">
                 <img class="card-img" src="images/hotel/hotel-4.jpg" width="300" height="212"
@@ -315,7 +293,6 @@
               </div>
             </li>
           </ul>
-
           <ul class="pagination">
             <li class="pagination-item pagination-current">
               <a class="pagination-link ">1</a>
@@ -337,7 +314,6 @@
             </li>
           </ul>
         </section>
-
         <section class="subscribe">
           <div class="subscribe-wrapper">
             <h2 class="section-title">Подпишитесь на рассылку</h2>
@@ -398,8 +374,5 @@
         </a>
       </footer>
     </div>
-
-
   </body>
-
 </html>
