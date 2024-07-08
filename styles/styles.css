@@ -614,7 +614,7 @@ body {
 .filter-catalog {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 72px;
+  column-gap: 70px;
 }
 
 .filter-catalog-group {
@@ -629,7 +629,7 @@ body {
 }
 
 .filter-catalog-group:nth-child(2) {
-  margin-right: 69px;
+  margin-right: 71px;
   padding-right: 9px;
 }
 
@@ -723,7 +723,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 46px;
+  margin-top: 43px;
   background-color:  rgba(255, 255, 255,0.3);
 }
 
@@ -819,7 +819,7 @@ body {
 }
 
 .filter-catalog-title {
-  padding: 0;
+  padding: 0 2px;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
