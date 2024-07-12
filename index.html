@@ -71,18 +71,24 @@
               </div>
               <img src="images/photo-1.jpg" width="800" height="385" alt="Заведение Седоны">
             </li>
-            <li class="advantages-item advantages-item-gray advantages-item-1">
-              <h3 class="advantages-title">Небольшая<br>площадь</h3>
-              <p class="advantages-description">Все достопримечательности находятся очень близко </p>
+            <li class="advantages-item advantages-item-gray">
+              <div class="advantages-item-wrap">
+                <h3 class="advantages-title">Небольшая<br>площадь</h3>
+                <p class="advantages-description">Все достопримечательности находятся очень близко </p>
+              </div>
             </li>
 
-            <li class="advantages-item bg-blue advantages-item-gray  ">
-              <h3 class="advantages-title">Красивая<br> дорога</h3>
-              <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="advantages-item bg-blue advantages-item-gray ">
+              <div class="advantages-item-wrap">
+                <h3 class="advantages-title">Красивая<br> дорога</h3>
+                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
             </li>
             <li class="advantages-item advantages-item-gray ">
+              <div class="advantages-item-wrap">
               <h3 class="advantages-title">Мало <br>туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
             </li>
             <li class="advantages-item advantages-item-picture advantages-item-white-2  ">
               <div class="advantages-item-picture-wrap ">
@@ -98,18 +104,24 @@
             <p class="section-description">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="advantages-continuation">
-            <li class="advantages-continuation-item advantages-continuation-item-house">
+            <li class="advantages-continuation-item ">
+              <div class="advantages-continuation-wrap advantages-continuation-item-house">
               <h3 class="advantages-title">Жильё</h3>
               <p class="advantages-description">Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!</p>
+              </div>
             </li>
-            <li class="advantages-continuation-item advantages-continuation-item-food">
+            <li class="advantages-continuation-item ">
+              <div class="advantages-continuation-wrap advantages-continuation-item-food">
               <h3 class="advantages-title">Еда</h3>
               <p class="advantages-description">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь!</p>
+            </div>
             </li>
-            <li class="advantages-continuation-item advantages-continuation-item-present">
+            <li class="advantages-continuation-item ">
+              <div class="advantages-continuation-wrap advantages-continuation-item-present ">
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
+            </div>
             </li>
           </ul>
         </section>
@@ -128,7 +140,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-field ">
                 <span class="visually-hidden">Ваш e-mail</span>
-                <input class="field-input" type="email" name="email" placeholder="Ваш e-mail">
+                <input class="field-input" type="email" name="email" placeholder="Ваш e-mail" required >
               </label>
               <button class="button button-big" type="submit">Подписаться</button>
             </form>
@@ -182,19 +194,16 @@
       <div class="modal-container">
         <div class="modal modal-auth">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
           <div>
             <form class="modal-content" action="https://echo.htmlacademy.ru/" method="get">
             <div class="arrival-date field ">
               <label class="arrival-date-label modal-content-ttile" for="dateArrival">Дата заезда:</label>
-              <input class="arrival-date-input  modal-content-input" type="text" id="dateArrival" name="dateArrival"  placeholder="Укажите дату" value="27 апреля 2020"  >
+              <input class="arrival-date-input  modal-content-input" type="text" id="dateArrival" name="dateArrival"  placeholder="Укажите дату" value="27 апреля 2020" required  >
               <span class="message-date-text">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="date-departure field">
               <label class=" arrival-date-label modal-content-ttile" for="dateDeparture">Дата выезда:</label>
-              <input class="arrival-date-input  modal-content-input" type="text" id="dateDeparture" name="dateDeparture"  placeholder="Укажите дату" value="1 сентября 2021">
+              <input class="arrival-date-input  modal-content-input" type="text" id="dateDeparture" name="dateDeparture"  placeholder="Укажите дату" value="1 сентября 2021" required >
               <span class="message-date-text">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="visiting-adults-wrapper visiting-adults-wrapper-grid">
@@ -237,6 +246,9 @@
             <button class="modal-content-button" type="submit">Найти</button>
           </form>
         </div>
+         <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </div>
       </div>
     </div>
