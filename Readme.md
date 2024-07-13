@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Макс](https://up.htmlacademy.ru/htmlcss/40/user/2489173).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
+* Сайт: [Проект Седона] (https://ryzen-71.github.io/2489173-sedona-40)
 
 ---
 
