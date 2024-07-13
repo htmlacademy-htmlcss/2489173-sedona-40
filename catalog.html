@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="logo" href="index.html">
           <img class="logo-img" src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
@@ -50,8 +50,8 @@
         </nav>
         <a class="button button-basic" href="#">Хочу сюда!</a>
       </header>
-      <main class="main">
-        <div class="wrapper-filter">
+      <main class="main" data-test="main">
+        <div class="wrapper-filter"  data-test="filter">
           <h1 class="main-inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -63,7 +63,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
-          <section class="filter">
+          <section class="filter" data-test="filter">
             <h2 class="visually-hidden">Список фильтров для сортировки гостиниц</h2>
             <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -155,7 +155,7 @@
             </form>
           </section>
         </div>
-         <section class="catalog">
+         <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="search-result">
             <h3 class="visually-hidden">Сортировка</h3>
@@ -316,7 +316,7 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe-wrapper">
             <h2 class="section-title">Подпишитесь на рассылку</h2>
             <p class="section-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -330,7 +330,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
@@ -366,7 +366,9 @@
           </li>
         </ul>
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
+          rel="noreferrer noopener">
+          <span class="visually-hidden">Сайт Html Academy</span>
           <svg class="footer-developer-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="34"
             viewBox="0 0 115 34" aria-hidden="true" focusable="false" fill="currentColor">
             <path
