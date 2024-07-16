@@ -99,6 +99,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  flex-shrink: 0;
 }
 
 .navigation-list .navigation-link {
@@ -135,10 +136,6 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: 20px;
-}
-
-.navigation-user .navigation-item:first-child {
-  margin-right: 5px;
 }
 
 .navigation-link {
@@ -188,6 +185,7 @@ body {
   min-width: 160px;
   padding: 8px 34px;
   border-radius: 4px;
+  max-width: 450px;
 }
 
 .button-basic:hover {
@@ -640,6 +638,9 @@ body {
   padding: 0;
   border: none;
   max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .price-sorting {
